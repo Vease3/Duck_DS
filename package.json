@@ -1,0 +1,24 @@
+{
+    "name": "duck-design-tokens",
+    "version": "1.0.0",
+    "description": "Design tokens for Duck DS — generates light and dark theme stylesheets.",
+    "main": "index.js",
+    "scripts": {
+    "build:light": "style-dictionary build --config style-dictionary/config.light.js",
+    "build:dark":  "style-dictionary build --config style-dictionary/config.dark.js",
+    "build":       "npm run build:light && npm run build:dark"
+    },
+    "keywords": [
+      "design-tokens",
+      "style-dictionary",
+      "css-variables",
+      "theming",
+      "figma"
+    ],
+    "author": "Veasey",
+    "license": "MIT",
+    "devDependencies": {
+      "style-dictionary": "^3.8.0"
+    }
+  }
+  
